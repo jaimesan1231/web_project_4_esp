@@ -4,4 +4,6 @@
   width: 100%;
   align-items: center;
   padding: 40px 0 50px;
+  max-width: 880px;
+  margin: 0 auto;
 }
