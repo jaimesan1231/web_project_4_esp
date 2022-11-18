@@ -1,0 +1,7 @@
+.profile {
+  display: grid;
+  grid-template-columns: 120px 1fr 150px;
+  width: 100%;
+  align-items: center;
+  padding: 40px 0 50px;
+}
