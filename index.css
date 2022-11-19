@@ -27,6 +27,11 @@
 @import url("./blocks/popup/__container/popup__container.css");
 @import url("./blocks/popup/__close-icon/popup__close-icon.css");
 
+@import url("./blocks/form/form.css");
+@import url("./blocks/form/__title/form__title.css");
+@import url("./blocks/form/__input/form__input.css");
+@import url("./blocks/form/__button/form__button.css");
+
 body {
   background-color: #000000;
   font-family: "Inter", sans-serif;
