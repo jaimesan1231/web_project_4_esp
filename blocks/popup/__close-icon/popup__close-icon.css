@@ -1,0 +1,7 @@
+.popup__close-icon {
+  width: 40px;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  transform: rotate(45deg);
+}
