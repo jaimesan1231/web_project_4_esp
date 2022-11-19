@@ -1,16 +1,18 @@
 # Proyecto 4: Alrededor de los Estados Unidos
 
-### Descripción general
+## Descripción general
 
-* Figma
-* Imágenes
+Proyecto realizado como parte del bootcamp de Desarrollo Web de Practicum. Esta página tiene como objetivo la visualización de varios lugares a los que viajó una persona. Actualmente la página permite editar el nombre y el trabajo de la persona utilizando javascript. Se espera mejorar el proyecto permitiendo que las actualizaciones del perfil se guarden a la hora de recargar la página y permita darle like a las imágenes.
 
-**Figma**
+![Página inicio](/images/screen1.jfif)
+![Formulario edit](/images/screen2.jfif)
 
-* [Enlace al proyecto en Figma](https://www.figma.com/file/LDMgqWesKpQkIwhOfEBuTS/WEB%2C-Sprint-5%3A-Around-The-U.S.-%7C-desktop-%2B-mobile?node-id=0%3A1)
+## Tecnologías utilizadas
 
-**Imágenes**
+- HTML
+- JavaScript
+- CSS
 
-A la hora de trabajar, debes optar por exportar las imágenes directamente desde Figma; te recomendamos hacerlo para practicar más. No olvides optimizarlas [aquí](https://tinypng.com/), para que tu proyecto cargue más rápido. 
+## Figma
 
-¡Esperamos que te diviertas con JavaScript!
+Para la creación de la página se siguió el siguiente diseño de [figma](https://www.figma.com/file/zXzLVGc4KNVm3FMTsAnQnH/WEB%2C-Sprint-4%3A-Alrededor-de-los-EEUU-%7C-desktop-%2B-mobile?node-id=0%3A1&t=PbD8GdWyq87E3Ir6-0)
