@@ -32,6 +32,14 @@
 @import url("./blocks/form/__input/form__input.css");
 @import url("./blocks/form/__button/form__button.css");
 
+@import url("./blocks/form/form.css");
+@import url("./blocks/form/__title/form__title.css");
+@import url("./blocks/form/__input/form__input.css");
+@import url("./blocks/form/__button/form__button.css");
+
+@import url("./blocks/footer/footer.css");
+@import url("./blocks/footer/__copy/footer__copy.css");
+
 body {
   background-color: #000000;
   font-family: "Inter", sans-serif;
