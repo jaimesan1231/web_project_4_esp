@@ -6,3 +6,10 @@
   position: relative;
   padding: 34px 36px;
 }
+@media screen and (max-width: 610px) {
+  .popup__container {
+    height: 322px;
+    width: 282px;
+    padding: 25px 22px;
+  }
+}

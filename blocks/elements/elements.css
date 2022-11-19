@@ -6,4 +6,18 @@
   list-style: none;
   margin: 0 auto;
   max-width: 880px;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 880px) {
+  .elements {
+    grid-template-columns: repeat(2, minmax(auto, 282px));
+  }
+}
+@media screen and (max-width: 610px) {
+  .elements {
+    grid-template-columns: repeat(1, 282px);
+    padding: 0 19px;
+  }
 }

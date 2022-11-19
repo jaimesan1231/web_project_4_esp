@@ -7,3 +7,19 @@
   align-items: center;
   gap: 13px 18px;
 }
+@media screen and (max-width: 880px) {
+  .profile__info {
+    grid-template-columns: 205px 24px;
+    gap: 13px 5px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .profile__info {
+    grid-template-columns: 205px 24px;
+    gap: 13px 15px;
+    justify-items: center;
+    margin-left: 0;
+    margin-top: 26px;
+  }
+}

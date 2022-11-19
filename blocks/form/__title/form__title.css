@@ -3,3 +3,9 @@
   font-weight: 900;
   line-height: 1.21;
 }
+@media screen and (max-width: 610px) {
+  .form__title {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+}

@@ -4,8 +4,15 @@
   color: #fff;
   cursor: pointer;
   transition: opacity 0.3s ease;
+  font-size: 18px;
+  line-height: 1.21;
 }
 
 .form__button:hover {
   opacity: 0.8;
+}
+@media screen and (max-width: 610px) {
+  .form__button {
+    font-size: 14px;
+  }
 }

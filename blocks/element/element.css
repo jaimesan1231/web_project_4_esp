@@ -3,4 +3,5 @@
   height: 361px;
   border-radius: 10px;
   overflow: hidden;
+  max-width: 100%;
 }

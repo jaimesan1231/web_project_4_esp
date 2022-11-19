@@ -3,7 +3,14 @@
   grid-template-columns: 120px 1fr 150px;
   width: 100%;
   align-items: center;
-  padding: 40px 0 50px;
+  padding: 40px 19px 50px;
   max-width: 880px;
   margin: 0 auto;
+}
+@media screen and (max-width: 610px) {
+  .profile {
+    grid-template-columns: 280px;
+    justify-content: center;
+    justify-items: center;
+  }
 }

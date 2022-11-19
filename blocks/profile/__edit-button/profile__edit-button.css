@@ -5,7 +5,16 @@
   height: 24px;
   cursor: pointer;
   transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .profile__edit-button:hover {
   opacity: 0.6;
+}
+@media screen and (max-width: 880px) {
+  .profile__edit-button {
+    width: 18px;
+    height: 18px;
+  }
 }
