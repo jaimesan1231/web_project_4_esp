@@ -4,4 +4,9 @@
   top: -40px;
   right: -40px;
   transform: rotate(45deg);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.popup__close-icon:hover {
+  opacity: 0.6;
 }
