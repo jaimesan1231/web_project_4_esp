@@ -17,18 +17,43 @@
         />
       </header>
       <main>
-        <div class="popup">
+        <div class="popup" id="edit-popup">
           <div class="popup__container">
             <img
               src="images/add.svg"
               alt="Icono de cerrar"
               class="popup__close-icon"
             />
-            <form action="" class="form">
-              <h2 class="form__title">Edit profile</h2>
+            <form action="" class="form" id="edit-form">
+              <h2 class="form__title">Editar perfil</h2>
               <input type="text" class="form__input" id="name" />
               <input type="text" class="form__input" id="description" />
               <button class="form__button">Guardar</button>
+            </form>
+          </div>
+        </div>
+        <div class="popup" id="add-popup">
+          <div class="popup__container">
+            <img
+              src="images/add.svg"
+              alt="Icono de cerrar"
+              class="popup__close-icon"
+            />
+            <form action="" class="form" id="add-form">
+              <h2 class="form__title">Nuevo lugar</h2>
+              <input
+                type="text"
+                class="form__input"
+                id="title"
+                placeholder="Título"
+              />
+              <input
+                type="text"
+                class="form__input"
+                id="link"
+                placeholder="Enlace a la imagen"
+              />
+              <button class="form__button">Crear</button>
             </form>
           </div>
         </div>
