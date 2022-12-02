@@ -50,104 +50,25 @@
           </button>
         </section>
         <section>
-          <ul class="elements">
-            <li class="element">
-              <img
-                src="./images/paisaje1.jpg"
-                alt="Imagen del Valle de Yosemite"
-                class="element__image"
-              />
-              <div class="element__footer">
-                <h2 class="element__title">Valle de Yosemite</h2>
-                <img
-                  src="./images/like.svg"
-                  alt="Icono de corazon"
-                  class="element__like-icon"
-                />
-              </div>
-            </li>
-            <li class="element">
-              <img
-                src="./images/paisaje2.jpg"
-                alt="Imagen del Lago Louise"
-                class="element__image"
-              />
-              <div class="element__footer">
-                <h2 class="element__title">Lago Louise</h2>
-                <img
-                  src="./images/like.svg"
-                  alt="Icono de corazon"
-                  class="element__like-icon"
-                />
-              </div>
-            </li>
-            <li class="element">
-              <img
-                src="./images/paisaje3.jpg"
-                alt="Imagen de las Montañas Calvas"
-                class="element__image"
-              />
-              <div class="element__footer">
-                <h2 class="element__title">Montañas Calvas</h2>
-                <img
-                  src="./images/like.svg"
-                  alt="Icono de corazon"
-                  class="element__like-icon"
-                />
-              </div>
-            </li>
-            <li class="element">
-              <img
-                src="./images/paisaje4.jpg"
-                alt="Imagen de Latemar"
-                class="element__image"
-              />
-              <div class="element__footer">
-                <h2 class="element__title">Latemar</h2>
-                <img
-                  src="./images/like.svg"
-                  alt="Icono de corazon"
-                  class="element__like-icon"
-                />
-              </div>
-            </li>
-            <li class="element">
-              <img
-                src="./images/paisaje5.jpg"
-                alt="Imagen de Vanoise National Park"
-                class="element__image"
-              />
-              <div class="element__footer">
-                <h2 class="element__title">Vanoise National Park</h2>
-                <img
-                  src="./images/like.svg"
-                  alt="Icono de corazon"
-                  class="element__like-icon"
-                />
-              </div>
-            </li>
-            <li class="element">
-              <img
-                src="./images/paisaje6.jpg"
-                alt="Imagen del Lago di Braies"
-                class="element__image"
-              />
-              <div class="element__footer">
-                <h2 class="element__title">Lago di Braies</h2>
-
-                <img
-                  src="./images/like.svg"
-                  alt="Icono de corazon"
-                  class="element__like-icon element__like-icon_active"
-                />
-              </div>
-            </li>
-          </ul>
+          <ul class="elements"></ul>
         </section>
       </main>
       <footer class="footer">
         <p class="footer__copy">&copy; 2021 Alrededor de los EEUU</p>
       </footer>
+      <template id="element-template">
+        <li class="element">
+          <img src="" alt="" class="element__image" />
+          <div class="element__footer">
+            <h2 class="element__title"></h2>
+            <img
+              src="./images/like.svg"
+              alt="Icono de corazon"
+              class="element__like-icon element__like-icon_active"
+            />
+          </div>
+        </li>
+      </template>
     </div>
     <script src="./scripts/index.js"></script>
   </body>
