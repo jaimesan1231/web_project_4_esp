@@ -3,6 +3,7 @@ const addButton = document.querySelector(".profile__add-button");
 const closeIcon = document.querySelectorAll(".popup__close-icon");
 const editPopup = document.querySelector("#edit-popup");
 const addPopup = document.querySelector("#add-popup");
+const imagePopup = document.querySelector("#image-popup");
 const nameInput = document.querySelector("#name");
 const descriptionInput = document.querySelector("#description");
 const addForm = document.querySelector("#add-form");
@@ -54,8 +55,10 @@ function hidePopup(e) {
 }
 const addCard = (card) => {
   const listElement = cardTemplate.cloneNode(true);
-  listElement.querySelector(".element__image").src = card.link;
-  listElement.querySelector(".element__image").alt = "Imagen de " + card.name;
+  const image = listElement.querySelector(".element__image");
+  image.src = card.link;
+  image.alt = "Imagen de " + card.name;
+  image.addEventListener("click", handleImagePopup);
   listElement.querySelector(".element__title").textContent = card.name;
   listElement.querySelector(".element__title");
   listElement
@@ -77,6 +80,12 @@ function handleEditFormSubmit(e) {
   name.textContent = nameInput.value;
   description.textContent = descriptionInput.value;
   hidePopup(e);
+}
+function handleImagePopup(e) {
+  imagePopup.classList.add("popup_opened");
+  imagePopup.querySelector(".popup__image").src = e.target.src;
+  imagePopup.querySelector(".popup__image-title").textContent =
+    e.target.alt.substring(10);
 }
 function handleAddFormSubmit(e) {
   e.preventDefault();
