@@ -57,9 +57,15 @@ const addCard = (card) => {
   listElement.querySelector(".element__image").src = card.link;
   listElement.querySelector(".element__image").alt = "Imagen de " + card.name;
   listElement.querySelector(".element__title").textContent = card.name;
+  listElement.querySelector(".element__title");
+  listElement
+    .querySelector(".element__like-icon")
+    .addEventListener("click", handleLikeButton);
   cardsContainer.prepend(listElement);
 };
-
+function handleLikeButton(e) {
+  e.target.classList.toggle("element__like-icon_active");
+}
 function handleEditFormSubmit(e) {
   e.preventDefault();
   name.textContent = nameInput.value;
