@@ -6,6 +6,15 @@ Proyecto realizado como parte del bootcamp de Desarrollo Web de Practicum. Esta 
 
 ![Página inicio](/images/screen1.jfif)
 ![Formulario edit](/images/screen2.jfif)
+![Formulario agregar](/images/screen3.jfif)
+![Vista amplia de foto](/images/screen4.jfif)
+
+## Funcionalidades
+
+- Permite agregar y eliminar fotos utilizando un formulario
+- Permite actualizar el perfil del usuario
+- Permite darle like a las fotos
+- Permite visualizar la foto haciendo click sobre ella
 
 ## Tecnologías utilizadas
 
