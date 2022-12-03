@@ -48,8 +48,8 @@ function showAddPopup() {
   addPopup.classList.add("popup_opened");
 }
 
-function hidePopup(evt) {
-  const poupContainer = evt.target.closest(".popup");
+function hidePopup(e) {
+  const poupContainer = e.target.closest(".popup");
   poupContainer.classList.remove("popup_opened");
 }
 const addCard = (card) => {
@@ -61,10 +61,16 @@ const addCard = (card) => {
   listElement
     .querySelector(".element__like-icon")
     .addEventListener("click", handleLikeButton);
+  listElement
+    .querySelector(".element__delete-icon")
+    .addEventListener("click", handleDeleteButton);
   cardsContainer.prepend(listElement);
 };
 function handleLikeButton(e) {
   e.target.classList.toggle("element__like-icon_active");
+}
+function handleDeleteButton(e) {
+  e.target.closest(".element").remove();
 }
 function handleEditFormSubmit(e) {
   e.preventDefault();
