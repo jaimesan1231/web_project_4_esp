@@ -1,4 +1,4 @@
-.element__delete-icon {
+.card__delete-icon {
   position: absolute;
   top: 18px;
   right: 15px;
@@ -11,6 +11,6 @@
   cursor: pointer;
 }
 
-.element__delete-icon:hover {
+.card__delete-icon:hover {
   opacity: 0.6;
 }

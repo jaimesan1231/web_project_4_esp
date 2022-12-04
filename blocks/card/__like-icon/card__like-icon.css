@@ -1,4 +1,4 @@
-.element__like-icon {
+.card__like-icon {
   min-width: 21px;
   height: 21px;
   cursor: pointer;
@@ -8,6 +8,6 @@
   background-color: transparent;
   object-fit: contain;
 }
-.element__like-icon:hover {
+.card__like-icon:hover {
   opacity: 0.6;
 }

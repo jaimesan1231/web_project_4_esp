@@ -15,15 +15,15 @@
 @import url("./blocks/profile/__description/profile__description.css");
 @import url("./blocks/profile/__add-button/profile__add-button.css");
 
-@import url("./blocks/elements/elements.css");
+@import url("./blocks/cards-container/cards-container.css");
 
-@import url("./blocks/element/element.css");
-@import url("./blocks/element/__image/element__image.css");
-@import url("./blocks/element/__footer/element__footer.css");
-@import url("./blocks/element/__title/element__title.css");
-@import url("./blocks/element/__like-icon/element__like-icon.css");
-@import url("./blocks/element/__like-icon/_active/element__like-icon_active.css");
-@import url("./blocks/element/__delete-icon/element__delete-icon.css");
+@import url("./blocks/card/card.css");
+@import url("./blocks/card/__image/card__image.css");
+@import url("./blocks/card/__footer/card__footer.css");
+@import url("./blocks/card/__title/card__title.css");
+@import url("./blocks/card/__like-icon/card__like-icon.css");
+@import url("./blocks/card/__like-icon/_active/card__like-icon_active.css");
+@import url("./blocks/card/__delete-icon/card__delete-icon.css");
 
 @import url("./blocks/popup/popup.css");
 @import url("./blocks/popup/__container/popup__container.css");
