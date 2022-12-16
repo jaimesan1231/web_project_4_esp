@@ -61,7 +61,7 @@ const setEventListeners = (formElement, args) => {
     inputErrorClass,
     errorClass,
   } = args;
-  const inputList = Array.from(formElement.querySelectorAll(inputSelector));
+  const inputList = formElement.querySelectorAll(inputSelector);
   const button = formElement.querySelector(submitButtonSelector);
   toggleButtonSubmit(inputList, button, inactiveButtonClass);
   inputList.forEach((inputElement) => {
@@ -79,7 +79,7 @@ const setEventListeners = (formElement, args) => {
 
 const enableValidation = (args) => {
   const { formSelector } = args;
-  const formList = Array.from(document.querySelectorAll(formSelector));
+  const formList = document.querySelectorAll(formSelector);
   formList.forEach((formElement) => {
     formElement.addEventListener("submit", function (evt) {
       evt.preventDefault();
@@ -109,7 +109,7 @@ export const resetValidation = (form, args) => {
     errorClass,
   } = args;
   const labelList = form.querySelectorAll(labelSelector);
-  Array.from(labelList).forEach((labelElement) => {
+  labelList.forEach((labelElement) => {
     const input = labelElement.querySelector(inputSelector);
     const error = labelElement.querySelector(errorSelector);
     input.classList.remove(inputErrorClass);

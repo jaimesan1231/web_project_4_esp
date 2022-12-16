@@ -118,9 +118,9 @@ editButton.addEventListener("click", showEditPopup);
 editForm.addEventListener("submit", handleEditProfileFormSubmit);
 addForm.addEventListener("submit", handleAddCardFormSubmit);
 addButton.addEventListener("click", () => openPopup(addPopup));
-Array.from(closeIcon).forEach((button) => {
+closeIcon.forEach((button) => {
   button.addEventListener("click", hidePopup);
 });
-Array.from(popupList).forEach((popupElement) => {
+popupList.forEach((popupElement) => {
   popupElement.addEventListener("click", handleExitPopupClick);
 });
