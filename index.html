@@ -24,10 +24,30 @@
               alt="Icono de cerrar"
               class="popup__close-icon"
             />
-            <form action="#" class="form" id="edit-form">
+            <form action="#" class="form" id="edit-form" novalidate>
               <h2 class="form__title">Editar perfil</h2>
-              <input type="text" class="form__input" id="name" />
-              <input type="text" class="form__input" id="description" />
+              <label class="form__label">
+                <input
+                  type="text"
+                  class="form__input"
+                  id="name"
+                  minlength="2"
+                  maxlength="40"
+                  required
+                />
+                <span class="form__input-error" id="name-error"></span>
+              </label>
+              <label class="form__label">
+                <input
+                  type="text"
+                  class="form__input"
+                  id="description"
+                  minlength="2"
+                  maxlength="200"
+                  required
+                />
+                <span class="form__input-error" id="description-error"></span>
+              </label>
               <button class="form__button">Guardar</button>
             </form>
           </div>
@@ -39,20 +59,30 @@
               alt="Icono de cerrar"
               class="popup__close-icon"
             />
-            <form action="#" class="form" id="add-form">
+            <form action="#" class="form" id="add-form" novalidate>
               <h2 class="form__title">Nuevo lugar</h2>
-              <input
-                type="text"
-                class="form__input"
-                id="title"
-                placeholder="Titulo"
-              />
-              <input
-                type="text"
-                class="form__input"
-                id="link"
-                placeholder="Enlace a la imagen"
-              />
+              <label class="form__label">
+                <input
+                  type="text"
+                  class="form__input"
+                  id="title"
+                  placeholder="Titulo"
+                  minlength="2"
+                  maxlength="30"
+                  required
+                />
+                <span class="form__input-error" id="title-error"></span>
+              </label>
+              <label class="form__label">
+                <input
+                  type="url"
+                  class="form__input"
+                  id="link"
+                  placeholder="Enlace a la imagen"
+                  required
+                />
+                <span class="form__input-error" id="link-error"></span>
+              </label>
               <button class="form__button">Crear</button>
             </form>
           </div>
@@ -104,5 +134,6 @@
       </template>
     </div>
     <script type="module" src="./scripts/index.js"></script>
+    <script type="module" src="./scripts/validate.js"></script>
   </body>
 </html>

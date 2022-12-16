@@ -1,0 +1,7 @@
+.form__input-error {
+  color: #ff0000;
+  font-size: 12px;
+  line-height: 1.21;
+  padding-top: 6px;
+  display: none;
+}

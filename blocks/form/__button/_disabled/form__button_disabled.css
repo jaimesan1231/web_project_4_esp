@@ -1,0 +1,10 @@
+.form__button_disabled {
+  background-color: transparent;
+  color: black;
+  opacity: 0.2;
+  cursor: default;
+  pointer-events: none;
+}
+.form__button_disabled:hover {
+  opacity: 0.2;
+}
