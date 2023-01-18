@@ -1,0 +1,14 @@
+export const editButton = document.querySelector(".profile__edit-button");
+export const addButton = document.querySelector(".profile__add-button");
+export const closeIcon = document.querySelectorAll(".popup__close-icon");
+export const editPopup = document.querySelector("#edit-popup");
+export const addPopup = document.querySelector("#add-popup");
+export const nameInput = document.querySelector("#name");
+export const descriptionInput = document.querySelector("#description");
+export const addForm = document.querySelector("#add-form");
+export const editForm = document.querySelector("#edit-form");
+export const name = document.querySelector(".profile__name");
+export const description = document.querySelector(".profile__description");
+export const cardsContainer = document.querySelector(".cards-container");
+export const popupList = document.querySelectorAll(".popup");
+export const formList = document.querySelectorAll(".form");
