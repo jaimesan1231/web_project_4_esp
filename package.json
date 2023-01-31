@@ -1,0 +1,39 @@
+{
+  "name": "web_project_4_esp",
+  "version": "1.0.0",
+  "description": "Proyecto realizado como parte del bootcamp de Desarrollo Web de Practicum. Esta página tiene como objetivo la visualización de varios lugares a los que viajó una persona. Actualmente la página permite editar el nombre y el trabajo de la persona utilizando formularios validados con javaScript, agregar eliminar y darle \"me gusta\" a las fotos.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack serve --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaimesan1231/web_project_4_esp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaimesan1231/web_project_4_esp/issues"
+  },
+  "homepage": "https://github.com/jaimesan1231/web_project_4_esp#readme",
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "autoprefixer": "^10.4.13",
+    "babel-loader": "^9.1.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.3",
+    "cssnano": "^5.1.14",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "postcss-loader": "^7.0.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "core-js": "^3.27.2"
+  }
+}
