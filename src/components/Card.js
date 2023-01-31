@@ -1,8 +1,8 @@
-const imagePopup = document.querySelector("#image-popup");
 export default class Card {
-  constructor(data) {
-    this._name = data.name;
-    this._link = data.link;
+  constructor({ title, link }, _handleCardClick) {
+    this._name = title;
+    this._link = link;
+    this._handleCardClick = _handleCardClick;
   }
   _setCardValues = (cardElement) => {
     const image = cardElement.querySelector(".card__image");
@@ -38,12 +38,6 @@ export default class Card {
     document.addEventListener("keydown", this._handleExitPopupKey);
     popup.classList.add("popup_opened");
   };
-  _handleImagePopup = (e) => {
-    this._openPopup(imagePopup);
-    imagePopup.querySelector(".popup__image").src = e.target.src;
-    imagePopup.querySelector(".popup__image-title").textContent =
-      e.target.alt.substring(10);
-  };
   _addCardEventHandlers = (cardElement) => {
     cardElement
       .querySelector(".card__like-icon")
@@ -53,7 +47,7 @@ export default class Card {
       .addEventListener("click", this._handleDeleteButton);
     cardElement
       .querySelector(".card__image")
-      .addEventListener("click", this._handleImagePopup);
+      .addEventListener("click", this._handleCardClick);
   };
   generateCard = () => {
     const cardElement = document

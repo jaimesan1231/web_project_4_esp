@@ -1,0 +1,62 @@
+@import url("../vendor/normalize.css");
+
+@import url("../fonts/InterWeb/inter.css");
+
+@import url("../blocks/page/page.css");
+
+@import url("../blocks/header/header.css");
+@import url("../blocks/header/__logo/header__logo.css");
+
+@import url("../blocks/profile/profile.css");
+@import url("../blocks/profile/__avatar/profile__avatar.css");
+@import url("../blocks/profile/__info/profile__info.css");
+@import url("../blocks/profile/__name/profile__name.css");
+@import url("../blocks/profile/__edit-button/profile__edit-button.css");
+@import url("../blocks/profile/__description/profile__description.css");
+@import url("../blocks/profile/__add-button/profile__add-button.css");
+
+@import url("../blocks/cards-container/cards-container.css");
+
+@import url("../blocks/card/card.css");
+@import url("../blocks/card/__image/card__image.css");
+@import url("../blocks/card/__footer/card__footer.css");
+@import url("../blocks/card/__title/card__title.css");
+@import url("../blocks/card/__like-icon/card__like-icon.css");
+@import url("../blocks/card/__like-icon/_active/card__like-icon_active.css");
+@import url("../blocks/card/__delete-icon/card__delete-icon.css");
+
+@import url("../blocks/popup/popup.css");
+@import url("../blocks/popup/__container/popup__container.css");
+@import url("../blocks/popup/__close-icon/popup__close-icon.css");
+@import url("../blocks/popup/_opened/popup_opened.css");
+@import url("../blocks/popup/__image-container/popup__image-container.css");
+@import url("../blocks/popup/__image-title/popup__image-title.css");
+@import url("../blocks/popup/__image/popup__image.css");
+
+@import url("../blocks/form/form.css");
+@import url("../blocks/form/__title/form__title.css");
+@import url("../blocks/form/__input/form__input.css");
+@import url("../blocks/form/__button/form__button.css");
+
+@import url("../blocks/form/form.css");
+@import url("../blocks/form/__title/form__title.css");
+@import url("../blocks/form/__label/form__label.css");
+@import url("../blocks/form/__input/form__input.css");
+@import url("../blocks/form/__input/_type/form__input_type_error.css");
+@import url("../blocks/form/__input-error/form__input-error.css");
+@import url("../blocks/form/__input-error/_visible/form__input-error_visible.css");
+@import url("../blocks/form/__button/form__button.css");
+@import url("../blocks/form/__button/_disabled/form__button_disabled.css");
+
+@import url("../blocks/footer/footer.css");
+@import url("../blocks/footer/__copy/footer__copy.css");
+
+body {
+  background-color: #000000;
+  font-family: "Inter", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Around the US</title>
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./page/index.css" />
   </head>
   <body>
     <div class="page">
@@ -41,14 +41,16 @@
                 <input
                   type="text"
                   class="form__input"
-                  id="description"
+                  id="job"
                   minlength="2"
                   maxlength="200"
                   required
                 />
-                <span class="form__input-error" id="description-error"></span>
+                <span class="form__input-error" id="job-error"></span>
               </label>
-              <button class="form__button">Guardar</button>
+              <button class="form__button form__button_disabled">
+                Guardar
+              </button>
             </form>
           </div>
         </div>
@@ -83,7 +85,7 @@
                 />
                 <span class="form__input-error" id="link-error"></span>
               </label>
-              <button class="form__button">Crear</button>
+              <button class="form__button form__button_disabled">Crear</button>
             </form>
           </div>
         </div>
@@ -105,11 +107,11 @@
             class="profile__avatar"
           />
           <div class="profile__info">
-            <h1 class="profile__name">Jacques Cousteau</h1>
+            <h1 class="profile__name"></h1>
             <button class="profile__edit-button">
               <img src="images/edit.svg" alt="Icono de editar" />
             </button>
-            <p class="profile__description">Explorador</p>
+            <p class="profile__description"></p>
           </div>
           <button class="profile__add-button">
             <img src="images/add.svg" alt="Icono de agregar" />
@@ -133,9 +135,6 @@
         </li>
       </template>
     </div>
-    <script type="module" src="./scripts/index.js"></script>
-    <script type="module" src="./scripts/utils.js"></script>
-    <script type="module" src="./scripts/FormValidator.js"></script>
-    <script type="module" src="./scripts/Card.js"></script>
+    <script type="module" src="./page/index.js"></script>
   </body>
 </html>
