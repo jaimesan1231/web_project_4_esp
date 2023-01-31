@@ -4,10 +4,10 @@
 
 Proyecto realizado como parte del bootcamp de Desarrollo Web de Practicum. Esta página tiene como objetivo la visualización de varios lugares a los que viajó una persona. Actualmente la página permite editar el nombre y el trabajo de la persona utilizando formularios validados con javaScript, agregar eliminar y darle "me gusta" a las fotos.
 
-![Página inicio](/images/screen1.jfif)
-![Formulario edit](/images/screen2.jfif)
-![Formulario agregar](/images/screen3.jfif)
-![Vista amplia de foto](/images/screen4.jfif)
+![Página inicio](/src/images/screen1.jfif)
+![Formulario edit](/src/images/screen2.jfif)
+![Formulario agregar](/src/images/screen3.jfif)
+![Vista amplia de foto](/src/images/screen4.jfif)
 
 ## Funcionalidades
 
