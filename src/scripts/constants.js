@@ -12,6 +12,7 @@ export const description = document.querySelector(".profile__description");
 export const cardsContainer = document.querySelector(".cards-container");
 export const popupList = document.querySelectorAll(".popup");
 export const formList = document.querySelectorAll(".form");
+export const profileImage = document.querySelector(".profile__avatar");
 export const initialCards = [
   {
     title: "Valle de Yosemite",
