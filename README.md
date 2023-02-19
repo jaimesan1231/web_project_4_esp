@@ -2,7 +2,7 @@
 
 ## Descripción general
 
-Proyecto realizado como parte del bootcamp de Desarrollo Web de Practicum. Esta página tiene como objetivo la visualización de varios lugares a los que viajó una persona. Actualmente la página permite editar el nombre y el trabajo de la persona utilizando formularios validados con javaScript, agregar eliminar y darle "me gusta" a las fotos.
+Proyecto realizado como parte del bootcamp de Desarrollo Web de Practicum. Esta página tiene como objetivo la publicación y visualización de fotos publicadas en la página. Actualmente la página permite editar el nombre y el trabajo de la persona utilizando formularios validados con javaScript y manipular las fotos utilizando una api para que la puedan visualizar las personas en la página
 
 ![Página inicio](/src/images/screen1.jfif)
 ![Formulario edit](/src/images/screen2.jfif)
@@ -16,12 +16,16 @@ Proyecto realizado como parte del bootcamp de Desarrollo Web de Practicum. Esta 
 - Permite darle like a las fotos
 - Permite visualizar la foto haciendo click sobre ella
 - Validacion de formularios mediante javaScript
+- Permite visualizar la cantidad de likes que tiene la foto
+- Permite actualizar la foto de perfil
+- Permite subir fotos para que otras personas las vean.
 
 ## Tecnologías utilizadas
 
 - HTML
 - JavaScript
 - CSS
+- webpack
 
 ## Figma
 
