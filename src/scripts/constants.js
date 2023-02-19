@@ -1,8 +1,6 @@
 export const editButton = document.querySelector(".profile__edit-button");
 export const addButton = document.querySelector(".profile__add-button");
 export const closeIcon = document.querySelectorAll(".popup__close-icon");
-export const editPopup = document.querySelector("#edit-popup");
-export const addPopup = document.querySelector("#add-popup");
 export const nameInput = document.querySelector("#name");
 export const jobInput = document.querySelector("#job");
 export const name = document.querySelector(".profile__name");
