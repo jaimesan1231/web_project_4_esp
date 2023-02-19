@@ -1,17 +1,17 @@
 export default class Card {
-  constructor(
-    { name, link, likes, _id },
-    _handleCardClick,
-    _handleLikeClick,
+  constructor({
+    data,
+    handleCardClick,
+    handleLikeClick,
     checkLikeActive,
-    handleDeleteButton
-  ) {
-    this._name = name;
-    this._link = link;
-    this._likes = likes;
-    this._id = _id;
-    this._handleCardClick = _handleCardClick;
-    this._handleLikeClick = _handleLikeClick;
+    handleDeleteButton,
+  }) {
+    this._name = data.name;
+    this._link = data.link;
+    this._likes = data.likes;
+    this._id = data._id;
+    this._handleCardClick = handleCardClick;
+    this._handleLikeClick = handleLikeClick;
     this._checkLikeActive = checkLikeActive;
     this._handleDeleteButton = handleDeleteButton;
   }
@@ -31,8 +31,6 @@ export default class Card {
     if (this._likes.length == 0) {
       likesNumber.classList.remove("card__like-number_visible");
     }
-    console.log("el id es");
-    console.log(this._id);
   };
 
   _hidePopup = () => {

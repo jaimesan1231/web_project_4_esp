@@ -9,6 +9,7 @@
   background: url("../../../images/Trash.svg");
   z-index: 2;
   cursor: pointer;
+  display: none;
 }
 
 .card__delete-icon:hover {

@@ -28,6 +28,7 @@
 @import url("../blocks/card/__like-number/_visible/card__like-number_visible.css");
 @import url("../blocks/card/__like-icon/_active/card__like-icon_active.css");
 @import url("../blocks/card/__delete-icon/card__delete-icon.css");
+@import url("../blocks/card/__delete-icon/_visible/card__delete-icon_visible.css");
 
 @import url("../blocks/popup/popup.css");
 @import url("../blocks/popup/__container/popup__container.css");
