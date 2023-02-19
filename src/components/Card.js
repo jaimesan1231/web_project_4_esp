@@ -73,9 +73,7 @@ export default class Card {
       .content.cloneNode(true);
     this._setCardValues(cardElement);
     this._addCardEventHandlers(cardElement);
-    console.log("card element");
     this._checkLikeActive(cardElement);
-    console.log(cardElement.querySelector(".card__image"));
     return cardElement;
   };
 }

@@ -9,9 +9,7 @@ export default class Popup {
     }
   }
   setEventListeners() {
-    console.log("se añadierom");
     this._element.addEventListener("click", (e) => {
-      console.log("clickkk");
       if (e.target.classList.contains("popup")) {
         this.close();
       }
@@ -27,7 +25,6 @@ export default class Popup {
     document.addEventListener("keydown", this._bindHandleEscClose);
   }
   close() {
-    console.log("se esta cerrando");
     this._element.classList.remove("popup_opened");
     document.removeEventListener("keydown", this._bindHandleEscClose);
   }
