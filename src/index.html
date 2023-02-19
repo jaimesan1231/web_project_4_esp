@@ -114,6 +114,20 @@
             </form>
           </div>
         </div>
+        <div class="popup" id="delete-popup">
+          <div class="popup__container">
+            <img
+              src="<%= require('./images/add.svg')%>"
+              alt="Icono de cerrar"
+              class="popup__close-icon"
+            />
+            <form action="#" class="form" id="edit-form" novalidate>
+              <h2 class="form__title">¿Estás seguro/a?</h2>
+
+              <button class="form__button form__button_disabled">Sí</button>
+            </form>
+          </div>
+        </div>
         <div class="popup" id="image-popup">
           <div class="popup__image-container">
             <img

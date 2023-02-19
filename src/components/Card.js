@@ -1,16 +1,19 @@
 export default class Card {
   constructor(
-    { name, link, likes },
+    { name, link, likes, _id },
     _handleCardClick,
     _handleLikeClick,
-    _checkLikeActive
+    checkLikeActive,
+    handleDeleteButton
   ) {
     this._name = name;
     this._link = link;
     this._likes = likes;
+    this._id = _id;
     this._handleCardClick = _handleCardClick;
     this._handleLikeClick = _handleLikeClick;
-    this._checkLikeActive = _checkLikeActive;
+    this._checkLikeActive = checkLikeActive;
+    this._handleDeleteButton = handleDeleteButton;
   }
   _handleLikeButton = (e) => {
     e.target.classList.toggle("card__like-icon_active");
@@ -18,20 +21,20 @@ export default class Card {
   _setCardValues = (cardElement) => {
     const image = cardElement.querySelector(".card__image");
     const likesNumber = cardElement.querySelector(".card__like-number");
+    const cardContainer = cardElement.querySelector(".card");
     image.src = this._link;
     image.alt = `Imagen de ${this._name}`;
+    cardContainer.dataset.id = this._id;
     cardElement.querySelector(".card__title").textContent = this._name;
     cardElement.querySelector(".card__like-number").textContent =
       this._likes.length;
     if (this._likes.length == 0) {
       likesNumber.classList.remove("card__like-number_visible");
     }
-    console.log(this._likes);
+    console.log("el id es");
+    console.log(this._id);
   };
 
-  _handleDeleteButton = (e) => {
-    e.target.closest(".card").remove();
-  };
   _hidePopup = () => {
     const poupContainer = document.querySelector(".popup_opened");
     document.removeEventListener("keydown", this._handleExitPopupKey);
@@ -59,7 +62,9 @@ export default class Card {
       .addEventListener("click", this._handleLikeClick);
     cardElement
       .querySelector(".card__delete-icon")
-      .addEventListener("click", this._handleDeleteButton);
+      .addEventListener("click", () => {
+        this._handleDeleteButton(this._id);
+      });
     cardElement
       .querySelector(".card__image")
       .addEventListener("click", this._handleCardClick);

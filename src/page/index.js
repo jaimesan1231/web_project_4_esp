@@ -17,6 +17,7 @@ import previewPopup from "../components/PopupWithImage.js";
 import userInfo from "../components/UserInfo.js";
 import Section from "../components/Section.js";
 import Api from "../components/Api";
+import PopupWithConfirmation from "../components/PopupWithConfirmation";
 
 //Config api
 const api = new Api({
@@ -135,6 +136,16 @@ const postCard = (inputValues) => {
               })
               .catch((err) => console.log(err));
           }
+        },
+        (cardElement) => {
+          if (data.likes.find((item) => item._id == userInfo.getUserId())) {
+            const likeIcon = cardElement.querySelector(".card__like-icon");
+            likeIcon.classList.add("card__like-icon_active");
+          }
+        },
+        (id) => {
+          deletePopup.open(id);
+          console.log("click aquiiii");
         }
       );
       const cardElement = newCard.generateCard();
@@ -150,6 +161,24 @@ const putLike = (id) => {
 const removeLike = (id) => {
   console.log(id);
 };
+//Delete Popup
+const deletePopup = new PopupWithConfirmation("#delete-popup", (e) => {
+  const cardId = e.target.dataset.id;
+  api
+    .deleteCard(cardId)
+    .then((res) => {
+      if (res.ok) {
+        deletePopup.close();
+        document.querySelector(`li[data-id="${cardId}"]`).remove();
+      } else {
+        return Promise.reject(`Error: ${res.status}`);
+      }
+    })
+    .catch((err) => console.log(err));
+  console.log(e.target.dataset.id);
+  console.log("se elimino algo");
+});
+deletePopup.setEventListeners();
 //Avatar Popup
 const popupAvatarForm = new PopupWithForm("#avatar-popup", (inputValue) => {
   const { avatar } = inputValue;
@@ -192,6 +221,7 @@ const renderInitialCards = (initialCards) => {
     {
       items: initialCards,
       renderer: (item) => {
+        console.log(item);
         const newCard = new Card(
           item,
           (e) => {
@@ -250,6 +280,10 @@ const renderInitialCards = (initialCards) => {
               const likeIcon = cardElement.querySelector(".card__like-icon");
               likeIcon.classList.add("card__like-icon_active");
             }
+          },
+          (id) => {
+            deletePopup.open(id);
+            console.log("click aquiiii");
           }
         );
         const cardElement = newCard.generateCard();

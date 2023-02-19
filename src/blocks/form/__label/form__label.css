@@ -1,4 +1,8 @@
 .form__label {
   display: flex;
   flex-direction: column;
+  margin-top: 29px;
+}
+.form__label:last-of-type {
+  margin-bottom: 35px;
 }
