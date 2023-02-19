@@ -1,19 +1,34 @@
 export default class Card {
-  constructor({ title, link }, _handleCardClick) {
-    this._name = title;
+  constructor(
+    { name, link, likes },
+    _handleCardClick,
+    _handleLikeClick,
+    _checkLikeActive
+  ) {
+    this._name = name;
     this._link = link;
+    this._likes = likes;
     this._handleCardClick = _handleCardClick;
+    this._handleLikeClick = _handleLikeClick;
+    this._checkLikeActive = _checkLikeActive;
   }
-  _setCardValues = (cardElement) => {
-    const image = cardElement.querySelector(".card__image");
-    image.src = this._link;
-    image.alt = `Imagen de ${this._name}`;
-    cardElement.querySelector(".card__title").textContent = this._name;
-  };
-
   _handleLikeButton = (e) => {
     e.target.classList.toggle("card__like-icon_active");
   };
+  _setCardValues = (cardElement) => {
+    const image = cardElement.querySelector(".card__image");
+    const likesNumber = cardElement.querySelector(".card__like-number");
+    image.src = this._link;
+    image.alt = `Imagen de ${this._name}`;
+    cardElement.querySelector(".card__title").textContent = this._name;
+    cardElement.querySelector(".card__like-number").textContent =
+      this._likes.length;
+    if (this._likes.length == 0) {
+      likesNumber.classList.remove("card__like-number_visible");
+    }
+    console.log(this._likes);
+  };
+
   _handleDeleteButton = (e) => {
     e.target.closest(".card").remove();
   };
@@ -41,7 +56,7 @@ export default class Card {
   _addCardEventHandlers = (cardElement) => {
     cardElement
       .querySelector(".card__like-icon")
-      .addEventListener("click", this._handleLikeButton);
+      .addEventListener("click", this._handleLikeClick);
     cardElement
       .querySelector(".card__delete-icon")
       .addEventListener("click", this._handleDeleteButton);
@@ -55,6 +70,9 @@ export default class Card {
       .content.cloneNode(true);
     this._setCardValues(cardElement);
     this._addCardEventHandlers(cardElement);
+    console.log("card element");
+    this._checkLikeActive(cardElement);
+    console.log(cardElement.querySelector(".card__image"));
     return cardElement;
   };
 }

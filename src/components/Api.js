@@ -1,4 +1,4 @@
-export class Api {
+export default class Api {
   constructor({ baseUrl, headers }) {
     this.baseUrl = baseUrl;
     this.headers = headers;
@@ -14,23 +14,45 @@ export class Api {
     });
   }
   editProfile(body) {
-    const { name, about } = body;
+    const { name, job } = body;
     return fetch(`${this.baseUrl}/users/me`, {
       method: "PATCH",
       headers: this.headers,
       body: JSON.stringify({
         name: name,
-        about: about,
+        about: job,
       }),
     });
   }
+  editAvatar(link) {
+    return fetch(`${this.baseUrl}/users/me/avatar`, {
+      method: "PATCH",
+      headers: this.headers,
+      body: JSON.stringify({
+        avatar: link,
+      }),
+    });
+  }
+  putLike(cardId) {
+    return fetch(`${this.baseUrl}/cards/likes/${cardId}`, {
+      method: "PUT",
+      headers: this.headers,
+    });
+  }
+  removeLike(cardId) {
+    return fetch(`${this.baseUrl}/cards/likes/${cardId}`, {
+      method: "DELETE",
+      headers: this.headers,
+    });
+  }
+
   postCard(body) {
-    const { name, link } = body;
+    const { title, link } = body;
     return fetch(`${this.baseUrl}/cards`, {
       method: "POST",
       headers: this.headers,
       body: JSON.stringify({
-        name: name,
+        name: title,
         link: link,
       }),
     });

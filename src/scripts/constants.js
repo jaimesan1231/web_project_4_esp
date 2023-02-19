@@ -13,6 +13,10 @@ export const cardsContainer = document.querySelector(".cards-container");
 export const popupList = document.querySelectorAll(".popup");
 export const formList = document.querySelectorAll(".form");
 export const profileImage = document.querySelector(".profile__avatar");
+export const profileImageContainer = document.querySelector(
+  ".profile__avatar-container"
+);
+export const cardLikes = document.querySelector(".card__like-number");
 export const initialCards = [
   {
     title: "Valle de Yosemite",

@@ -6,9 +6,13 @@ class UserInfo {
   getUserInfo() {
     return { name: this._name.textContent, job: this._job.textContent };
   }
-  setUserInfo({ name, job }) {
+  setUserInfo({ name, job, id }) {
     this._name.textContent = name;
     this._job.textContent = job;
+    this._id = id;
+  }
+  getUserId() {
+    return this._id;
   }
 }
 
