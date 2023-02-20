@@ -91,7 +91,7 @@ const renderInitialCards = (initialCards) => {
             if (item.owner._id !== userId) {
               cardElement
                 .querySelector(".card__delete-icon")
-                .classList.remove(".card__delete-icon_visible");
+                .classList.remove("card__delete-icon_visible");
             }
 
             if (item.likes.find((item) => item._id == userId)) {

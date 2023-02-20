@@ -112,7 +112,7 @@ export const postCard = (button, inputValues, popup) => {
         },
       });
       const cardElement = newCard.generateCard();
-      cardsContainer.append(cardElement);
+      cardsContainer.prepend(cardElement);
       button.textContent = "Crear";
       popup.close();
     })
